@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/kevinmichaelchen/fx-libs/gqlgen"
+	"github.com/kevinmichaelchen/simple-go-118-workspace/bar"
 	"github.com/rs/zerolog"
 )
 
 func main() {
 	fmt.Println("hi")
-	gqlgen.NewRelicMiddleware()
+	bar.Bar()
 	l := zerolog.Logger{}
 	l.Info().Msg("hi")
 }
